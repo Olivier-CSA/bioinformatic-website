@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: "Georgia";
+}
+body{
+    margin: 0;
+    padding: 1rem;
+    background-color:#42455a;
+}
+header{
+    /*width: 100%;*/
+    display:block;
+    height:100px;
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+    padding-top: 30px;
+}
+
+.presentation{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+    color:lightgray;
+}
+
+.BtnAccueil{
+    background-color: white;
+    border-radius:10%;
+    height: 200px;
+    width: 300px;
+    padding: 10%;
+    display: grid;
+    gap:1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family:"Times New Roman", "Georgia", serif;
+    font-size: large;
+    box-shadow :rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /*https://getcssscan.com/css-box-shadow-examples*/
+    cursor: pointer;
+}
+
+.BtnAccueil:hover, .BtnAccueil:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.texteBtn{
+    padding-top: 130px;
+}
+
+.ContainerBtn{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.icone{
+    width: 100px;
+    margin: auto;
+}
+
+.BtnRetour { /*https://getcssscan.com/css-buttons-examples [Boutton 3]*/
+    appearance: none;
+    background-color: #02581a;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 100px;
+  }
+  .BtnRetour:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  .BtnRetour:hover {
+    background-color: #2c974b;
+  }
+  .BtnRetour:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  .BtnRetour:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  .BtnRetour:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+
+/***************** Formulaires **********************/
+
+.grosInput{
+    border-radius: 30px;
+    width: 90%;
+    height: 200px;
+    
+}
+
+.moyenInput{
+    border-radius: 30px;
+    width: 90%;
+    height: 100px;
+}
+
+.petitInput{
+    border-radius: 30px;
+    width: 90%;
+    height: 50px;
+    
+}
+
+.titreForm{
+    font-size: 25px;
+    color: lightgreen;
+}
+
+.titreForm { /*https://silvawebdesigns.com/line-on-sides-headers/*/
+    line-height: 0.5;
+    text-align: center;
+  }
+  .titreForm span {
+    display: inline-block;
+    position: relative;  
+  }
+  .titreForm span::before,
+  .titreForm span::after {
+    content: "";
+    position: absolute;
+    height: 9px;
+    border-bottom: 2px solid lightgreen;
+    width: 600px;
+  }
+  .titreForm span::before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .titreForm span::after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+  .input{
+    display: flex;
+    justify-content: center;
+  }
+
+  textarea{
+    text-indent: 20px;
+    padding-right: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.BtnSoumettre { /*https://getcssscan.com/css-buttons-examples [Boutton 3]*/
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-left: 8%;
+}
+.BtnSoumettre:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.BtnSoumettre:hover {
+  background-color: #2c974b;
+}
+.BtnSoumettre:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+.BtnSoumettre:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+.BtnSoumettre:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.erreurs{
+    border-radius: 30px;
+    background-color: lightcoral;
+    display: none;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.resultatRC{/*Par la force des choses, c'est aussi le placeholder de d'autres résultats que juste RC.*/
+    border-radius: 30px;
+    width: 90%;
+    height: 200px;
+    text-indent: 20px;
+    padding-right: 15px;
+    background-color: white;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/***************** Reverse Complément ***********************/
+
+
+#rcErreurs{
+    width : 350px;
+}
+
+/***************** Prévalence des codons ***********************/
+.resultatPC{
+    border-radius: 30px;
+    width: 90%;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 15px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    column-count: 11;
+}
+
+/***************** Traduction ***********************/
+#traductionErreurs{
+    width : 400px;
+}
+
+/***************** Nomenclature ***********************/
+#nomenclatureErreurs{
+    width : 350px;
+}
+
+/***************** Gène codant ***********************/
+.resultatGC{
+    border-radius: 30px;
+    background-color: rgb(51, 245, 51);
+    /*display: none;*/
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+
+}
+
+#erreursGC{
+    width : 350px;
+}
+
+/***************** Hybridation Amorce ***********************/
+
+#PourcentageRessemblance {
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    padding-top: 20px;
+}
+
+#HAerreurs{
+    width : 200px;
+}
+
+#HApourcentageVide{
+    width : 800px;
+}
+
+
+
+
+
+/*Plutôt qu'avoir des encadrés d'erreur propre à chaque page, il serait plus élégant de faire un template général qui s'alligne automatiquement sur la largeur des séquences*/

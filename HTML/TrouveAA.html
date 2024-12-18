@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Styles.css">
+    </head>
+
+    <!-- Pour l'instant, c'est possible de le faire en utilisant la fonction de gène codant. Cette fonction prendra une séquence d'ADN en entrée et demandera à l'utilisateur de cocher un ou plusieurs acides aminés qu'il/elle souhaite trouver dans cette séquence. Le résultat sera la même séquence de départ, mais avec les acides aminés surlignés (avec un code de couleur et une légende, si possible) -->
+
+    <body>
+        <header>
+            Trouver un acide aminé
+        </header>
+        <div class="instruction presentation">
+            Entre une séquence ci-dessous et chochez les acides aminés que vous cherchez 
+        </div>
+
+        <div class="field">
+        <form id="signup">
+            <div class="titreForm">
+                <span>
+                    <label for="Sequence">Votre séquence</label>
+                </span>
+            </div>
+            <br>
+            <div class="trouveAA">
+                <textarea type="text" class="grosInput" id="Sequence" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="BtnSoumettre" >Chercher</button>
+        </form>
+        </div>
+
+        <div class="titreForm" style="padding-top: 50px;">
+            <span>
+                Résultat
+            </span>
+        </div>
+
+        <div class="resultatRC" id="resultat">
+            
+        </div>
+        <div class="erreurs" id="AAerreurs">
+            
+        </div>
+        
+        <div >
+            <button class="BtnRetour" onclick="window.location.href='../Index.html'"> Retourner à la page d'accueil</button>
+        </div>
+    </body>
+    <script src="../JS/Script.js"></script>
+</html>

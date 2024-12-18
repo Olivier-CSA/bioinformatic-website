@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Styles.css">
+    </head>
+
+    <body>
+        <header>
+            Traduction
+        </header>
+        <div class="instruction presentation">
+            Entrez une séquence d'ADN ci-dessous pour obtenir sa traduction en acides aminés
+        </div>
+
+        <div class="field">
+        <form id="traduction">
+            <div class="titreForm">
+                <span>
+                    <label for="Sequence">Séquence (ADN)</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="grosInput" id="Sequence" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="BtnSoumettre" >Traduire</button>
+        </form>
+        </div>
+
+        <div class="titreForm" style="padding-top: 50px;">
+            <span>
+                Séquence (Acides aminés)
+            </span>
+        </div>
+
+        <div class="resultatRC" id="resultat">
+            
+        </div>
+        <div class="erreurs" id="traductionErreurs">
+            
+        </div>
+        
+        <div >
+            <button class="BtnRetour" onclick="window.location.href='../Index.html'"> Retourner à la page d'accueil</button>
+        </div>
+
+    </body>
+    <script src="../JS/Script.js"></script>
+
+    <!--
+        À faire : 
+            Enlever les messages d'erreurs lorsqu'ils ne sont plus utiles (lors d'un nouvel envoi de formulaire - rafraîchir?)
+    -->
+
+</html>

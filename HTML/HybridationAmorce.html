@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Styles.css">
+    </head>
+
+    <body>
+        <header>
+            Trouver un site d'hybridation
+        </header>
+        <div class="instruction presentation">
+            Entrez une séquence d'ADN et une séquence d'amorce pour trouver tous les sites d'hybridation de cette amorce
+        </div>
+
+        <div class="field">
+        <form id="hybridationAmorce">
+            <div class="titreForm">
+                <span>
+                    <label for="SequenceADN">Séquence d'ADN</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="grosInput" id="SequenceADN" required></textarea>
+            </div>
+            <br>
+            <div class="titreForm">
+                <span>
+                    <label for="SequenceAmorce">Séquence de l'amorce</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="petitInput" id="SequenceAmorce" required></textarea>
+            </div>
+            <br>
+            <div class="titreForm">
+                <span>
+                    <label for="pourcentageRessemblance">Pourcentage de ressemblance</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="number" class="tresPetitInput" id="PourcentageRessemblance" placeholder="80" ></textarea>
+            </div>
+            <br>
+            <button type="submit" class="BtnSoumettre" >Rechercher</button>
+        </form>
+        </div>
+
+        <div class="resultatGC" id="resultat">
+            
+        </div>
+        <div class="erreurs" id="HAerreurs">
+            
+        </div>
+        <div class="erreurs" id="HApourcentageVide">
+            
+        </div>
+        
+        <div >
+            <button class="BtnRetour" onclick="window.location.href='../Index.html'"> Retourner à la page d'accueil</button>
+        </div>
+
+    </body>
+    <script src="../JS/Script.js"></script>
+
+    <!--
+        À faire : 
+            
+    -->
+</html>

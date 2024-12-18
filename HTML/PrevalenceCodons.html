@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Styles.css">
+    </head>
+
+    <body>
+        <header>
+            Prévalence des codons
+        </header>
+        <div class="instruction presentation">
+            Entrez une séquence ci-dessous pour obtenir la prévalence des codons qu'elle contient (en suivant le cadre de lecture).
+        </div>
+
+        <div class="field">
+        <form id="PrevalenceCodons">
+            <div class="titreForm">
+                <span>
+                    <label for="Sequence">Votre séquence</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="grosInput" id="Sequence" placeholder="Le nombre de caractères doit être un multiple de 3."></textarea>
+            </div>
+            <br>
+            <button type="submit" class="BtnSoumettre" >Analyser</button>
+        </form>
+        </div>
+
+        <div class="titreForm" style="padding-top: 50px;">
+            <span>
+                Prévalence des codons
+            </span>
+        </div>
+
+        <div class="resultatPC" id="resultat">
+            
+        </div>
+        <div id="erreurs">
+            
+        </div>
+        
+        <div >
+            <button class="BtnRetour" onclick="window.location.href='../Index.html'"> Retourner à la page d'accueil</button>
+        </div>
+    </body>
+    <script src="../JS/Script.js"></script>
+
+    <!--Perspectives futures : 
+        1. Offrir la possibilité de comparer les codon usages de différents organismes en offrant de comparer différentes séquences
+        2. Organiser les résultats sous forme d'un joli tableau (possibilité d'organiser en fonction des acides aminés des codons) 
+            -> en lien avec 1., ajouter une colonne d'analyse statistique des deux organismes et montrer les données côte-à-côte
+        3. Afficher un message d'erreur lorsque la séquence n'est pas un multiple de 3, mais quand-même afficher le résultat
+        4. Afficher un message d'erreur lorsqu'une séquence n'est pas un codon (p.ex. "ZZZ"), mais laisser quand-même l'utilisateur le faire.
+    -->
+</html>

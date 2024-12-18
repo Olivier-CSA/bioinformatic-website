@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Styles.css">
+    </head>
+
+    <body>
+        <header>
+            Reverse complément
+        </header>
+        <div class="instruction presentation">
+            Entrez une séquence ci-dessous pour obtenir son « reverse complément »
+        </div>
+
+        <div class="field">
+        <form id="reverseComplement">
+            <div class="titreForm">
+                <span>
+                    <label for="Sequence">Votre séquence</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="grosInput" id="Sequence" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="BtnSoumettre" >Obtenir le reverse complément</button>
+        </form>
+        </div>
+
+        <div class="titreForm" style="padding-top: 50px;">
+            <span>
+                Reverse complement
+            </span>
+        </div>
+
+        <div class="resultatRC" id="resultat">
+            
+        </div>
+        <div class="erreurs" id="rcErreurs">
+            
+        </div>
+        
+        <div >
+            <button class="BtnRetour" onclick="window.location.href='../Index.html'"> Retourner à la page d'accueil</button>
+        </div>
+
+    </body>
+
+    <script src="../JS/Script.js"></script>
+
+    <!-- À faire : 
+            1. Offrir le choix d'avoir le résultat en majuscules ou minuscules (case à cocher)
+    
+    -->
+</html>

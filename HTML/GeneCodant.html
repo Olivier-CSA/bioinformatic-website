@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Styles.css">
+    </head>
+
+    <body>
+        <header>
+            Trouver le gène codant
+        </header>
+        <div class="instruction presentation">
+            Entre une séquence d'ADN et une séquence protéique pour trouver la position de la première occurence d'un gène codant pour cette protéine
+        </div>
+
+        <div class="field">
+        <form id="geneCodant">
+            <div class="titreForm">
+                <span>
+                    <label for="SequenceADN">Séquence d'ADN</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="grosInput" id="SequenceADN" required></textarea>
+            </div>
+            <br>
+            <div class="titreForm">
+                <span>
+                    <label for="SequenceProteine">Séquence de la protéine</label>
+                </span>
+            </div>
+            <br>
+            <div class="input">
+                <textarea type="text" class="moyenInput" id="SequenceProteine" required placeholder="Séquence à 1 lettre"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="BtnSoumettre" >Analyser</button>
+        </form>
+        </div>
+
+        <div class="resultatGC" id="resultat">
+            
+        </div>
+        <div class="erreurs" id="erreursGC">
+            
+        </div>
+        
+        <div >
+            <button class="BtnRetour" onclick="window.location.href='../Index.html'"> Retourner à la page d'accueil</button>
+        </div>
+
+    </body>
+    <script src="../JS/Script.js"></script>
+
+    <!--
+        À faire : 
+            Ça pourrait être intéressant de donner le choix à l'utilisateur d'un pourcentage d'erreur pour identifer des mutations ponctuelles.
+            Trouver une façon de rafraîchir la page à chaque envoi du formulaire pour éviter d'avoir le message d'erreur de l'envoi précédent
+            Mettre un checkbox que l'utilisateur peut cocher s'il souhaite trouver tous les gènes qui codent pour la protéine (pas seulement la première occurence)
+    -->
+</html>
